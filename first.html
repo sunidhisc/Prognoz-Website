@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title> Prognoztech Pvt Ltd </title>
+<link rel="stylesheet" href="first.css">
+<!-- <base href="C:\Users\Documents\WebProg\">-->
+<style>
+h1{
+background-color: #EBF5FB;
+font-family: "Times New Roman";
+padding: 50px;          
+}
+footer{
+padding: 10px;
+margin-top: 200px;
+padding: 10px;
+text-align: center;
+background-color: #85C1E9;
+}
+#d1{
+float: left;
+}
+#d2{
+float: right;
+margin-left: 250px;
+}
+a{
+text-decoration: none;
+margin-left: 20px;
+}
+body {
+    background-image: url("coding.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: 30% 30%;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #0a038a;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 56px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #85C1E9;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd; 
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body bgcolor="#E6F8FF">
+<div id="d1">
+<img src="prognoz.png" height="100" width="500">
+</div>
+<div id="d2">
+<img src="nsdc.png" alt="NSDC" height="100" width="250">
+</div>
+<h1 align="center">  </h1>
+<div class="navbar">
+    <a href="C:/Users/DELL/Documents/WebProg/first.html">Home</a>
+    <a href="C:/Users/DELL/Documents/WebProg/aboutus.html">About us</a>
+    <div class="dropdown">
+      <button class="dropbtn">Training / Placement
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="C:/Users/DELL/Documents/WebProg/courses&resources.html">Courses & Resources</a>
+        <a href="C:/Users/DELL/Documents/WebProg/career&placement.html">Career & Placement</a></div>
+    </div>
+    <a href="C:/Users/DELL/Documents/WebProg/contactus.html"> Contact us</a>
+</div><br><br>
+
+<p align="justify">Our dedicated placement cell ensures that every candidate gets placed in reputed company. 
+Upon the completion of our course, our candidates are ready to face the industrial challenges
+in an effective manner. We create that "wow factor" in our candidates which not only helps 
+them in securing an excellent job but also helps them build a dream career.
+Placement Assured Online & Offline Courses</p>
+<p align="justify">We provide IT industry validated Job Assured Placement Programs for Freshers. 
+The courses are: Data Science with Python, Machine Learning & AI, Cloud Computing with AWS,
+Python Web Development, Full Stack Web Development, Java Technology, .NET Technology, PHP Web
+Development and Software Testing. In addition, we also provide Technical Skill Upgradation Courses
+for career advancement of working professionals.The courses are conducted in ONLINE and OFFLINE modes.</p>
+
+Current Date and Time : <span id='txt'></span><br><br>
+Current Time : <span id='time'></span>
+<script src="">
+var today=new Date();
+document.getElementById('txt').innerHTML=today;
+
+var date = new Date();
+var day=date.getDate();
+var month=date.getMonth()+1;
+var year=date.getFullYear();
+document.write('<br>Date is : '+day+'/'+month+'/'+year);
+
+var today = new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+document.getElementById('time').innerHTML=h+':'+m+':'+s;
+
+function msg()
+{
+  alert("Hello Alert box");
+}
+function message()
+{
+  var a=confirm("Are you sure ?");
+  if(a==true)
+  {
+    alert("Ok");
+  }
+  else{
+    alert("Cancel");
+  }
+}
+function msg1()
+{
+  var b= prompt("Who are you ?");
+  alert("You are "+b);
+}
+function msg2()
+{
+  open("https://www.google.com/");
+}
+function msg3()
+{
+  setTimeout(function()
+  {alert("Welcome after 2 seconds")},2000);
+}
+
+</script><br><br>
+<input type="button" value="Click " onclick="msg()"/>
+<input type="button" value="Click 1" onclick="message()"/>
+<input type="button" value="Click 2" onclick="msg1()"/>
+<input type="button" value="Click 3" onclick="msg2()"/>
+<input type="button" value="Click 4" onclick="msg3()"/>
+
+<a href="second.html"> <i><u> Click here </u></i> </a>
+<footer>
+<p>Copyright 2023 � Prognoz Technologies Pvt. Ltd. All Rights Reserved.</p></footer>
+</body>
+</html>
