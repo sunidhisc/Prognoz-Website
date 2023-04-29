@@ -1,0 +1,51 @@
+<html>
+<head>
+<title> Career & Placement </title>
+<style>
+#d1{
+float: left;
+}
+#d2{
+float: right;
+}
+#d3{
+  width: 500px;
+  border: 0.5px solid green;
+  padding: 30px;
+  margin-left: 350px;
+}
+</style>
+</head>
+<body>
+
+<script>
+
+function register()
+{
+  alert("Registered Successfully");
+}
+</script>
+
+
+<div id="d1">
+<img src="naukri.png" height="50" width="200">
+</div>
+<div id="d2">
+<p align="left"> Already registered? <a href="#">Login</a> here </p></div>
+<div id="d3">
+<h1 align="center"> Find a job and grow your career </h1>
+<form>
+Full Name<br>
+<input type="text" name="name" placeholder="What is your name ?" required><br><br>
+Email Id<br>
+<input type="email" name="mail" placeholder="Tell us your Email ID" required><br><br>
+Password<br>
+<input type="password" name="password" placeholder="Create a password for your account"><br><br>
+Mobile number<br>
+<input type="number" name="mobile" placeholder="Mobile Number"><br><br>
+<input type="button" value="Register Now" onclick="register()"/>
+</form>
+</div>
+</body>
+
+</html>
