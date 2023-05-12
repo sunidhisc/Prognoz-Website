@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time Bound Animations</title>
+    <link href="css/timeanim.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#divautofade").on('click', function () {
+                $(this).stop(true).slideUp('100');
+            }).delay(10000).slideUp('100')
+        });
+    </script>
+</head>
+<body>
+    <h2>Time Bound Animation using delay() and stop()</h2>
+    <div id="divautofade">
+        Watch this Div auto close after 10 seconds.<br /><br />
+        Alternatively, Click on the Div to close.
+    </div>
+</body>
+</html>
