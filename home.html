@@ -23,45 +23,73 @@ margin-left: 250px;
 </head>
 <body>
 
+<div class="top-bar">
+<div class="container text-center">
+<a href="https://prognoztech.net" target="_blank" style="background-color:rgb(20, 3, 173) text:white"><blink>Prognoz EasyLearn - E-Learning Portal</blink></a>
+</div>
+</div>
+
 <div id="d1">
 <img src="prognoz.png" height="80" width="400">
 </div>
-
+<!--
 <div id="d2">
 <img src="nsdc.png" height="80" width="230">
 </div><br><br>
-<nav class="navbar navbar-inverse">
+-->
+<br><br>
 <div class="container">
-<ul class="nav navbar-nav">
-<li class="active"><a href="#">HOME</a></li>
-<li class="active"><a href="#">ABOUT US</a></li>
+  <ul class="nav nav-pills">
+    <li class="active">
+      <a data-toggle="pill" href="C:/Users/DELL/Documents/WebProg/home.html">HOME</a></li>
+    <li><a data-toggle="pill" href="#menu1">ABOUT US</a></li>
 
-<li class="dropdown">
-<a class="dropdown-toggle" data-toggle="dropdown" href="#">COURSES 
-<span class="caret"></span></a>
-<ul class="dropdown-menu">
-<li><a href="#">ONLINE courses</a></li>
-<li><a href="#">OFFLINE courses</a></li></ul></li>
-<li class="dropdown">
-  <a class="dropdown-toggle" data-toggle="dropdown" href="#">PLACEMENT
-  <span class="caret"></span></a>
-  <ul class="dropdown-menu">
-  <li><a href="#">Placement List</a></li>
-  <li><a href="#">Recruiting Companies</a></li></ul></li>
-  <li class="dropdown">
-  <a class="dropdown-toggle" data-toggle="dropdown" href="#">RESOURCES
-  <span class="caret"></span></a>
-  <ul class="dropdown-menu">
-  <li><a href="#">Trainee Testimonials</a></li>
-  <li><a href="#">Recruiters Testimonials</a></li>
-  <li><a href="#">Job Opportunities</a></li>
-  <li><a href="#">E-Learning Classroom</a></li>
-  <li><a href="#">Blog</a></li></ul></li>
-<li><a href="#">CAREERS</a></li>
-<li><a href="#">CONTACT US</a></li>
-</ul>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">COURSES 
+      <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+      <li><a href="#">ONLINE courses</a></li>
+      <li><a href="#">OFFLINE courses</a></li></ul></li>
+
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">PLACEMENT
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+        <li><a href="#">Placement List</a></li>
+        <li><a href="#">Recruiting Companies</a></li></ul></li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">RESOURCES
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+          <li><a href="#">Trainee Testimonials</a></li>
+          <li><a href="#">Recruiters Testimonials</a></li>
+          <li><a href="#">Job Opportunities</a></li>
+          <li><a href="#">E-Learning Classroom</a></li>
+          <li><a href="#">Blog</a></li></ul></li>
+
+    <li><a data-toggle="pill" href="#menu2">CAREERS</a></li>
+    <li><a data-toggle="pill" href="#menu3">CONTACT US</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>HOME</h3>
+      <p>Display home page</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Menu 1</h3>
+      <p>Display menu1 page</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Display menu2 page</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Display menu1 page</p>
+    </div>
+  </div>
 </div>
-</nav>
 
 <div class="container-fluid"> 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
